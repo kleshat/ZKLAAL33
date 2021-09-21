@@ -157,7 +157,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/kleshat/ALFAAA/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/kleshat/ZKLAAL/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -1157,7 +1157,7 @@ end
 
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/kleshat/ALFAAA/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/kleshat/ZKLAAL/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,'◉ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -2654,9 +2654,9 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/kleshat/ALFAAA/main/DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/kleshat/ALFAAA/main/library')
-os.execute('wget https://raw.githubusercontent.com/kleshat/ALFAAA/main/File_Bot')
+os.execute('wget https://raw.githubusercontent.com/kleshat/ZKLAAL/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/kleshat/ZKLAAL/main/library')
+os.execute('wget https://raw.githubusercontent.com/kleshat/ZKLAAL/main/File_Bot')
 send(msg.chat_id_, msg.id_,' ◉ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -2900,7 +2900,7 @@ echo '╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸\n◉✔{ مـده تـش�
 ]]):read('*all'))  
 end
 
-if text == 'رفع المشتركين' or 'رفع نسخه' and DevSoFi(msg) then 
+if text == 'رفع المشتركين' and DevSoFi(msg) then 
 function by_reply(extra, result, success)    
 if result.content_.document_ then  
 local ID_FILE = result.content_.document_.document_.persistent_id_  
@@ -2917,7 +2917,7 @@ end
 end 
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil) 
 end
-if text == 'جلب المشتركين' or 'جلب نسخه' and DevSoFi(msg) then 
+if text == 'جلب المشتركين'and DevSoFi(msg) then 
 local list = database:smembers(bot_id..'User_Bot') 
 local t = '{"users":['   
 for k,v in pairs(list) do 
@@ -4811,7 +4811,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevSoFi(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/kleshat/ALFAAA/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/kleshat/ZKLAAL/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -4849,7 +4849,7 @@ t = " ◉ الملف ← "..file.."\n ◉ تم تعطيل ملف \n"
 else
 t = " ◉ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/kleshat/ALFAAA/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/kleshat/ZKLAAL/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -4869,7 +4869,7 @@ t = " ◉ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " ◉ الملف ← "..file.."\n ◉ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/kleshat/ALFAAA/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/kleshat/ZKLAAL/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
