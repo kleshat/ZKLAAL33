@@ -1165,11 +1165,11 @@ end
 if text == 'قناه السورس' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
-[اضغط هنا وانضم الي قناه السورس](/t.me/AP_XO )
+[اضغط هنا وانضم الي قناه السورس](t.me/AP_XO )
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'قناه السورس️️', url="/t.me/AP_XO "}}, 
+{{text = 'قناه السورس️️', url="t.me/AP_XO "}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1947,7 +1947,7 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,dat
 if data.username_ ~= false then
 send(msg.chat_id_,0," ◉ العضو : {["..data.first_name_.."](T.ME/"..data.username_..")}\n ◉ ["..DRAGON_Msg.."] \n")
 else
-send(msg.chat_id_,0," ◉ العضو : {["..data.first_name_.."](/t.me/AP_XO )}\n ◉ ["..DRAGON_Msg.."] \n")
+send(msg.chat_id_,0," ◉ العضو : {["..data.first_name_.."](t.me/AP_XO )}\n ◉ ["..DRAGON_Msg.."] \n")
 end
 end,nil)   
 DeleteMessage(msg.chat_id_, {[0] = msg.id_})     
@@ -2403,7 +2403,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0, " ◉ عذرا ← {[@"..data.username_.."]}\n ◉ عذرا تم منع الملصق \n" ) 
 else
-send(msg.chat_id_,0, " ◉ عذرا ← {["..data.first_name_.."](/t.me/AP_XO )}\n ◉ عذرا تم منع الملصق \n" ) 
+send(msg.chat_id_,0, " ◉ عذرا ← {["..data.first_name_.."](t.me/AP_XO )}\n ◉ عذرا تم منع الملصق \n" ) 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
@@ -2423,7 +2423,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0," ◉ عذرا ← {[@"..data.username_.."]}\n ◉ عذرا تم منع الصوره \n" ) 
 else
-send(msg.chat_id_,0," ◉ عذرا ← {["..data.first_name_.."](/t.me/AP_XO )}\n ◉ عذرا تم منع الصوره \n") 
+send(msg.chat_id_,0," ◉ عذرا ← {["..data.first_name_.."](t.me/AP_XO )}\n ◉ عذرا تم منع الصوره \n") 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
@@ -2440,7 +2440,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0," ◉ عذرا ← {[@"..data.username_.."]}\n ◉ عذرا تم منع المتحركه \n") 
 else
-send(msg.chat_id_,0," ◉ عذرا ← {["..data.first_name_.."](/t.me/AP_XO )}\n ◉ عذرا تم منع المتحركه \n" ) 
+send(msg.chat_id_,0," ◉ عذرا ← {["..data.first_name_.."](t.me/AP_XO )}\n ◉ عذرا تم منع المتحركه \n" ) 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
@@ -2684,11 +2684,11 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'ياسورس'  then
 local Text =[[
-[♢ | 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐙𝐊𝐋𝐀𝐋](/t.me/AP_XO)
+[♢ | 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐙𝐊𝐋𝐀𝐋](t.me/AP_XO)
 
-[♢ | 𝐀𝐋𝐟𝐚 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞](/t.me/AP_XO)
+[♢ | 𝐀𝐋𝐟𝐚 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞](t.me/AP_XO)
 
-[♢ | 𝐅𝐨𝐥𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐁𝐞𝐥𝐨𝐰](/t.me/AP_XO)
+[♢ | 𝐅𝐨𝐥𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐁𝐞𝐥𝐨𝐰](t.me/AP_XO)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -2697,7 +2697,7 @@ keyboard.inline_keyboard = {
 {text = '𝐃𝐄𝐕 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/M_ahmu_d"},{text = '𝐃𝐄𝐕 𝐌𝐀𝐍𝐈𝐀𝐋', url = "https://t.me/MANIAL_XBLACK"},
 },
 {
-{text = '𝙲𝙷𝙰𝙽𝙽𝙰𝙻 𝚉𝙺𝙻𝙰𝙻', url = "https:///t.me/AP_XO"},
+{text = '𝙲𝙷𝙰𝙽𝙽𝙰𝙻 𝚉𝙺𝙻𝙰𝙻', url = "https://t.me/AP_XO"},
 },
 {
 {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
@@ -2709,7 +2709,7 @@ end
 
 if text == 'قناه السورس' or text == 'قناه السورس' or text == 'قناه السورس' or text == '"' then
 local Text =[[
-[𝐂𝐡](/t.me/AP_XO)
+[𝐂𝐡](t.me/AP_XO)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -2718,7 +2718,7 @@ keyboard.inline_keyboard = {
 {text = '𝐃𝐄𝐕 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/M_ahmu_d"},{text = '𝐃𝐄𝐕 𝐌𝐀𝐍𝐈𝐀𝐋', url = "https://t.me/MANIAL_XBLACK"},
 },
 {
-{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url = "https:///t.me/AP_XO"}
+{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/AP_XO"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -2738,7 +2738,7 @@ keyboard.inline_keyboard = {
 {text = '𝐃𝐄𝐕 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/M_ahmu_d"},{text = '𝐃𝐄𝐕 𝐌𝐀𝐍𝐈𝐀𝐋', url = "https://t.me/MANIAL_XBLACK"},
 },
 {
-{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url = "https:///t.me/AP_XO"},
+{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/AP_XO"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -2749,7 +2749,7 @@ if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'بوت
 local Text =[[
 
 
-𖤛- [اهلا بك في سورس زغلل الجمدان لو عايز بوت بأسعار منسبه وبوت مميز كلمني ](/t.me/AP_XO) 𖤛
+𖤛- [اهلا بك في سورس زغلل الجمدان لو عايز بوت بأسعار منسبه وبوت مميز كلمني ](t.me/AP_XO) 𖤛
 
 
 ]]
@@ -2760,7 +2760,7 @@ keyboard.inline_keyboard = {
 {text = '𝐃𝐄𝐕 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/M_ahmu_d"},
 },
 {
-{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url = "https:///t.me/AP_XO"},
+{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/AP_XO"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -2877,7 +2877,7 @@ keyboard.inline_keyboard = {
 {text = 'بــوت الـيـوتـيـوب', url = "https://t.me/AL_YOUT_BOT"},
 },
 {
-{text = 'قـنـاة الـتـحـديـثـآت', url = "https:///t.me/AP_XO"},
+{text = 'قـنـاة الـتـحـديـثـآت', url = "https://t.me/AP_XO"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3233,11 +3233,11 @@ return false
 end
 if text == 'قناة السورس' then
 local Text = [[ 
-[اضغط هنا وانضم الي قناه السورس](/t.me/AP_XO )
+[اضغط هنا وانضم الي قناه السورس](t.me/AP_XO )
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ◉', url="/t.me/AP_XO "}}, 
+{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ◉', url="t.me/AP_XO "}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3281,12 +3281,12 @@ local Text = [[
 ◉ لعبة البـات ← بات
 ◉ لعبة الانجليزي ← انجليزي
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](/t.me/AP_XO ) 
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](t.me/AP_XO ) 
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ◉', url="/t.me/AP_XO "}}, 
+{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ◉', url="t.me/AP_XO "}}, 
 {{text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -3373,12 +3373,12 @@ local Text = [[
 ◉ معني + اسمك ← لعرض الميزه
 ◉ خلفيات ← لعرض الميزه
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](/t.me/AP_XO ) 
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](t.me/AP_XO ) 
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ◉', url="/t.me/AP_XO "}}, 
+{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ◉', url="t.me/AP_XO "}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/hdhsjuei/2?single&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3415,7 +3415,7 @@ keyboard.inline_keyboard = {
 {{text = 'SpaceTraveler', url="https://t.me/gamee?game=SpaceTraveler"},{text = 'RedAndBlue', url="https://t.me/gamee?game=RedAndBlue"}},  
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
-{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ◉', url="/t.me/AP_XO "}},
+{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ◉', url="t.me/AP_XO "}},
 }  
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/hdhsjuei/2?single&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4817,7 +4817,7 @@ local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
 local TextS = "\n ◉ اهلا بك في متجر ملفات زغلل\n ◉ ملفات السورس ↓\n≪╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸≫\n\n"
-local TextE = "\n╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸\n ◉ علامة تعني { ✔️ } ملف مفعل\n ◉ علامة تعني { x } ملف معطل\n ◉ قناة سورس زغلل ↓\n".." ◉ [اضغط هنا لدخول](/t.me/AP_XO ) \n"
+local TextE = "\n╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸\n ◉ علامة تعني { ✔️ } ملف مفعل\n ◉ علامة تعني { x } ملف معطل\n ◉ قناة سورس زغلل ↓\n".." ◉ [اضغط هنا لدخول](t.me/AP_XO ) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -10310,7 +10310,7 @@ local text =
 ' }\n'..' ◉  الايدي ← { '..idgp..
 ' }\n'..' ◉  الايدي بالصوره ← { '..idph..
 ' }\n'..' ◉  الرفع ← { '..setadd..
-' }\n'..' ◉  الحظر ← { '..banm..' }\n\n╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸\n ◉ قناة سورس زغلل ↓\n [ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](/t.me/AP_XO ) \n'
+' }\n'..' ◉  الحظر ← { '..banm..' }\n\n╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸\n ◉ قناة سورس زغلل ↓\n [ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](t.me/AP_XO ) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -12019,7 +12019,7 @@ ght = math.random(2,200);
 local Text ='تم اختيار المقطع الصوتي لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url="/t.me/AP_XO "}},
+{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url="t.me/AP_XO "}},
 {{text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -12032,7 +12032,7 @@ ght = math.random(1,33);
 local Text ='الستخدم ثيم اخر اكتب ثيم'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
- {{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url="/t.me/AP_XO "}},
+ {{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url="t.me/AP_XO "}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendDocument?chat_id=' .. msg.chat_id_ .. '&document=https://t.me/ahmedthem11/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12043,7 +12043,7 @@ ght = math.random(1,55);
 local Text ='تم اختيار فديو استوري  لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ◉', url="/t.me/AP_XO "}},
+{{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ◉', url="t.me/AP_XO "}},
 {{text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -12582,7 +12582,7 @@ end
 
 if text == 'انا مين' and SudoBot(msg) then
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت مطوري نور عنيا🥺🤍](/t.me/AP_XO)'
+local textt = '[انت مطوري نور عنيا🥺🤍](t.me/AP_XO)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12605,7 +12605,7 @@ end
 
 if text == 'انا مين' and DevSoFi(msg) then 
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت مطوري الثاني حته مني 😍💚](/t.me/AP_XO)'
+local textt = '[انت مطوري الثاني حته مني 😍💚](t.me/AP_XO)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12628,7 +12628,7 @@ end
 
 if text == 'انا مين' and Sudo(msg) then 
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت المطور بس الصغنن 🌝💘](/t.me/AP_XO)'
+local textt = '[انت المطور بس الصغنن 🌝💘](t.me/AP_XO)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12651,7 +12651,7 @@ end
 
 if text == 'انا مين' and CoSu(msg) then 
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[نت المالك هن يعني حاجه فوق فوق راسي 😂♥](/t.me/AP_XO)'
+local textt = '[نت المالك هن يعني حاجه فوق فوق راسي 😂♥](t.me/AP_XO)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12674,7 +12674,7 @@ end
 
 if text == 'انا مين' and Constructor(msg) then 
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت منشئ يسطا عتلاء منشئ عاوز حاجه تانيه??🤦‍♂️](/t.me/AP_XO)'
+local textt = '[انت منشئ يسطا عتلاء منشئ عاوز حاجه تانيه??🤦‍♂️](t.me/AP_XO)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12697,7 +12697,7 @@ end
 
 if text == 'انا مين' and BasicConstructor(msg) then 
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[ انت هنا منشئ اساسي يعني اعلى رتبه عاوزك تفتخر😂🎯](/t.me/AP_XO)'
+local textt = '[ انت هنا منشئ اساسي يعني اعلى رتبه عاوزك تفتخر😂🎯](t.me/AP_XO)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12720,7 +12720,7 @@ end
 
 if text == 'انا مين' and Manager(msg) then 
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[ انت المدير يعني الروم تحت سيطرتك😹](/t.me/AP_XO)'
+local textt = '[ انت المدير يعني الروم تحت سيطرتك😹](t.me/AP_XO)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12743,7 +12743,7 @@ end
 
 if text == 'انا مين' and Mod(msg) then 
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت مجرد ادمن اجتهد عشان تاخد رتبه😹 ](/t.me/AP_XO)'
+local textt = '[انت مجرد ادمن اجتهد عشان تاخد رتبه😹 ](t.me/AP_XO)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12766,7 +12766,7 @@ end
 
 if text == 'انا مين' and Special(msg) then 
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[ انت مميز ابن ناس 😊 ](/t.me/AP_XO)'
+local textt = '[ انت مميز ابن ناس 😊 ](t.me/AP_XO)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12789,7 +12789,7 @@ end
 
 if text == 'انا مين' then
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[ عضو قميل 🌝💘 ](/t.me/AP_XO)'
+local textt = '[ عضو قميل 🌝💘 ](t.me/AP_XO)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14324,7 +14324,7 @@ local Text =[[
 ◉ قم بأختيار اللغه.. ↑↓
 ◉ Choose language.. ↑↓ 
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](/t.me/AP_XO  )
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](t.me/AP_XO  )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14332,7 +14332,7 @@ keyboard.inline_keyboard = {
 {text = 'english 𝅘𝅥𝅮', callback_data="/add"},{text = 'عربي 𝅘𝅥𝅮', callback_data="/help90"},
 },
 {
-{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ', url="/t.me/AP_XO  "},
+{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ', url="t.me/AP_XO  "},
 },
 {
 {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
@@ -14362,7 +14362,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'•═════•〈〈ＺＫＬＡＬ 〉〉•═════•\nاضغط علي الاسم ليتم نسخه\n•═════•〈〈ＺＫＬＡＬ 〉〉•═════•ٴ\n ◉ ❲[『𝙰𝚕𝚏𝚊』](/t.me/AP_XO )❳ ◉ ')
+send(msg.chat_id_, msg.id_, t..'•═════•〈〈ＺＫＬＡＬ 〉〉•═════•\nاضغط علي الاسم ليتم نسخه\n•═════•〈〈ＺＫＬＡＬ 〉〉•═════•ٴ\n ◉ ❲[『..』](t.me/AP_XO )❳ ◉ ')
 end
 
 if text == "تعطيل معاني الاسماء" and Manager(msg) then
@@ -14714,7 +14714,7 @@ end
 local Teext =[[
 ◉ اكتب الامر الذي تريد تنفيذه..↑↓
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](/t.me/AP_XO  )
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](t.me/AP_XO  )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14805,7 +14805,7 @@ end
 local Teext =[[
 ◉ اكتب الامر الذي تريد تنفيذه..↑↓
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](/t.me/AP_XO  )
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](t.me/AP_XO  )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14890,7 +14890,7 @@ local Teext =[[
 ◉ التكرار.
 ◉ السب.
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](/t.me/AP_XO  )
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](t.me/AP_XO  )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14970,7 +14970,7 @@ local Teext =[[
 ◉ الصـوره.
 ◉ الرابـط.
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](/t.me/AP_XO  )
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](t.me/AP_XO  )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15039,7 +15039,7 @@ local Teext =[[
 ◉ مسح المدراء
 ◉ الـمـدراء
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](/t.me/AP_XO  )
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](t.me/AP_XO  )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15099,7 +15099,7 @@ local Teext =[[
 ◉ المطورين 
 ◉ الغاء العام
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](/t.me/AP_XO  )
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](t.me/AP_XO  )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15221,7 +15221,7 @@ local Teext =[[
 ◉ تاك للمطلقات
 ◉ مسح المطلقات
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](/t.me/AP_XO  )
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](t.me/AP_XO  )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15241,7 +15241,7 @@ local Teext =[[
 ◉ قم بأختيار اللغه.. ↑↓
 ◉ Choose language.. ↑↓ 
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](/t.me/AP_XO  )
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](t.me/AP_XO  )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15249,7 +15249,7 @@ keyboard.inline_keyboard = {
 {text = 'english 𝅘𝅥𝅮', callback_data="/add"},{text = 'عربي 𝅘𝅥𝅮', callback_data="/help90"},
 },
 {
-{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ', url="/t.me/AP_XO  "},
+{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ', url="t.me/AP_XO  "},
 },
 {
 {text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"},
@@ -15270,7 +15270,7 @@ local Teext =[[
 ◉ اليك الاوامر الخاص بسورس زغلل .
 ◉ اختر الامر الذي تريده من الازرار بلاسفل .
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](/t.me/AP_XO  )
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋 ](t.me/AP_XO  )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15336,7 +15336,7 @@ Mobile moving
 ◉ Bots
 ◉ Prohibited
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](/t.me/AP_XO ) 
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](t.me/AP_XO ) 
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
 ]]
 keyboard = {} 
@@ -15385,7 +15385,7 @@ local Teext =[[
 ◉ Crown for cats
 ◉ Cats survey
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](/t.me/AP_XO ) 
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](t.me/AP_XO ) 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15436,7 +15436,7 @@ local Teext =[[
 ◉ Crown for Paradise
 ◉ Storage survey
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](/t.me/AP_XO ) 
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](t.me/AP_XO ) 
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
 ]]
 keyboard = {} 
@@ -15490,7 +15490,7 @@ local Teext =[[
 ◉ Mido «← ←
 ◉ Delete link
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](/t.me/AP_XO ) 
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](t.me/AP_XO ) 
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
 ]]
 keyboard = {} 
@@ -15550,7 +15550,7 @@ local Teext =[[
 ◉ Preventors General
 ◉ Canceling the general
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](/t.me/AP_XO ) 
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](t.me/AP_XO ) 
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
 ]]
 keyboard = {} 
@@ -15569,7 +15569,7 @@ local Teext =[[
 ◉ You can use the buttons..↑↓
 ◉ By putting pressure on them..↑↓
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](/t.me/AP_XO ) 
+◉ 𝘾𝙃 - [𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋](t.me/AP_XO ) 
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
 ]]
 keyboard = {} 
@@ -15964,7 +15964,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,
 if data.username_ ~= false then
 send(msg.chat_id_,0," ◉ العضو : {["..data.first_name_.."](T.ME/"..data.username_..")}\n ◉ ["..DRAGONAbot.."] \n") 
 else
-send(msg.chat_id_,0," ◉ العضو : {["..data.first_name_.."](/t.me/AP_XO  )}\n ◉ ["..DRAGONAbot.."] \n") 
+send(msg.chat_id_,0," ◉ العضو : {["..data.first_name_.."](t.me/AP_XO  )}\n ◉ ["..DRAGONAbot.."] \n") 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
