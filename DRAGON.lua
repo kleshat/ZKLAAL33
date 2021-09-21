@@ -2698,7 +2698,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '𝐃𝐄𝐕 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/M_ahmu_d"},{text = '𝐃𝐄𝐕 𝐌𝐀𝐍𝐈𝐀𝐋', url = "https://t.me/MANIAL_XBLACK"},
+{text = '𝐃𝐄𝐕 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/M_ahmu_d"},
 },
 {
 {text = '𝙲𝙷𝙰𝙽𝙽𝙰𝙻 𝚉𝙺𝙻𝙰𝙻', url = "https://t.me/AP_XO"},
