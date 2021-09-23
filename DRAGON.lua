@@ -135,6 +135,8 @@ _redis = load_redis()
 --------------------------------------------------------------------------------------------------------------
 print([[
 
+              
+
                                                                                             
    ▄▄▄▄▄▄▄ ▄▄▄   ▄ ▄▄▄     ▄▄▄▄▄▄▄ ▄▄▄     
 █       █   █ █ █   █   █       █   █    
@@ -144,7 +146,7 @@ print([[
 █ █▄▄▄▄▄█    ▄  █       █   ▄   █       █
 █▄▄▄▄▄▄▄█▄▄▄█ █▄█▄▄▄▄▄▄▄█▄▄█ █▄▄█▄▄▄▄▄▄▄█
 
-                                                                                                  
+                                                                                          
 ]])
 sudos = dofile("./ZKLAL.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -267,7 +269,7 @@ var = true
 elseif tonumber(user_id) == tonumber( 1970574026) then
 var = true
 elseif tonumber(user_id) == tonumber(bot_id) then
-var = true  
+var = true   
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
 var = true  
 elseif database:sismember(bot_id..'Sudo:User', user_id) then
@@ -303,7 +305,7 @@ var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber( 1970574026) then
 var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
-var = 'المطور الاساسي'  
+var = 'المطور الاساسي' 
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
 var = "المطور الاساسي²"  
 elseif tonumber(user_id) == tonumber(bot_id) then  
@@ -923,7 +925,7 @@ end
 if DevSoFi(msg) then
 local bl = '◉ مرحبا بك في اوامر المطور الجاهزه\n ◉ قناة السورس\n'
 local keyboard = {
-{'زغلل '},
+{'زغلل','المنيل '},
 {'ضع اسم للبوت'},
 {'اوامر الاذاعه','اوامر التفعيل','اوامر التعطيل'},
 {'الاحصائيات'},
@@ -961,7 +963,7 @@ keyboard = {
 {'مستقبلي','لو خيروك','حساب الوزن'},
 {'•═════•〈〈ＺＫＬＡＬ 〉〉•═════•'},
 {'كشف الكدب','نسبه الغباء','نسبه الحب'},
-{'المنيل','يوتيوب','زغلل'},
+{'زغلل','يوتيوب','المنيل'},
 }
 end
 send_inline_key(msg.chat_id_, msg.id_, keyboard) 
@@ -1583,7 +1585,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒓𝒆𝒗𝒐𝒓 •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
+send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆  •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
 end
 return false
 end
@@ -1606,7 +1608,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒓𝒆𝒗𝒐𝒓 •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
+send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆  •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
 end
 return false
 end
@@ -1628,7 +1630,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒓𝒆𝒗𝒐𝒓 •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
+send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆  •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
 end
 return false
 end
@@ -2698,7 +2700,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '𝐃𝐄𝐕 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/M_ahmu_d"},
+{text = '𝐃𝐄𝐕 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/M_ahmu_d"},{text = '𝐃𝐄𝐕 𝐌𝐀𝐍𝐈𝐀𝐋', url = "https://t.me/MANIAL_XBLACK"},
 },
 {
 {text = '𝙲𝙷𝙰𝙽𝙽𝙰𝙻 𝚉𝙺𝙻𝙰𝙻', url = "https://t.me/AP_XO"},
@@ -2719,10 +2721,10 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '𝐃𝐄𝐕 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/M_ahmu_d"},{text = '𝐃𝐄𝐕 𝐌𝐀𝐍𝐈𝐀𝐋', url = "https://t.me/MANIAL_XBLACK"},
+{text = '𝐒𝐨𝐮𝐫𝐜𝐞 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐞𝐫𝐬', url = "https://t.me/AP_XO"},
 },
 {
-{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/AP_XO"}
+{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋', url = "https://t.me/AP_XO"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -2748,7 +2750,6 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/hdhsjuei/2?single&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'بوت مين' or text == '"' then
 local Text =[[
 
@@ -2921,7 +2922,7 @@ end
 end 
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil) 
 end
-if text == 'جلب المشتركين'and DevSoFi(msg) then 
+if text == 'جلب المشتركين' and DevSoFi(msg) then 
 local list = database:smembers(bot_id..'User_Bot') 
 local t = '{"users":['   
 for k,v in pairs(list) do 
@@ -3294,7 +3295,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/MADI_PICK/19?single&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/hdhsjuei/2?single&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == "بوستات" or text == "قولي" then 
 local TWEET_Msg = { 
@@ -3575,10 +3576,10 @@ database:set(bot_id..'lock:Fshar'..msg.chat_id_,true)
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 send(msg.chat_id_, msg.id_,' ◉ بواسطه ← ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'AP_XO ')..') \n ◉ تـم قفـل السب ')
 end,nil)  
-elseif text == 'قفل زغللرسيه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
+elseif text == 'قفل الفارسيه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
 database:set(bot_id..'lock:Fars'..msg.chat_id_,true) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' ◉ بواسطه ← ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'AP_XO ')..') \n ◉ تـم قفـل زغللرسيه ')
+send(msg.chat_id_, msg.id_,' ◉ بواسطه ← ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'AP_XO ')..') \n ◉ تـم قفـل الفارسيه ')
 end,nil)   
 elseif text == 'قفل الانجليزيه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
 database:set(bot_id..'lock:Engilsh'..msg.chat_id_,true) 
@@ -3667,10 +3668,10 @@ database:del(bot_id..'lock:Fshar'..msg.chat_id_)
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 send(msg.chat_id_, msg.id_,' ◉ بواسطه ← ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'AP_XO ')..') \n ◉ تـم فـتح السب ')
 end,nil)   
-elseif text == 'فتح زغللرسيه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
+elseif text == 'فتح الفارسيه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
 database:del(bot_id..'lock:Fars'..msg.chat_id_) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' ◉ بواسطه ← ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'AP_XO ')..') \n ◉ تـم فـتح زغللرسيه ')
+send(msg.chat_id_, msg.id_,' ◉ بواسطه ← ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'AP_XO ')..') \n ◉ تـم فـتح الفارسيه ')
 end,nil)   
 elseif text == 'فتح الانجليزيه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
 database:del(bot_id..'lock:Engilsh'..msg.chat_id_) 
@@ -4326,7 +4327,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/bebo44yy/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "حروف بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,23); 
+ght = math.random(1,15); 
 local Text ='مرحبا إليك حروف بالصوره◉'
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -4351,7 +4352,7 @@ database:set(bot_id..'lock:Fshar'..msg.chat_id_,true)
 database:set(bot_id..'lock:edit'..msg.chat_id_,true)  
 database:set(bot_id..'lock:tagrvrbot'..msg.chat_id_,true) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)  
-send(msg.chat_id_, msg.id_,'\n◉تم قفل البوتات بالطرد\n◉تم وضع الايدي بدون صوره\n◉تم قفل التكرار بالطرد\n◉تم قفل الروابط\n◉تم قفل التوجيه\n◉تم قفل الملصقات\n◉تم قفل المتحركه\n◉تم قفل الفيديو\n◉تم قفل السب\n◉تم قفل التعديل\n◉تم قفل زغللرسيه\n◉تم قفل التفليش\n\nتم تفعيل الحمايه بواسطه ←['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'AP_XO ')..')')   
+send(msg.chat_id_, msg.id_,'\n◉تم قفل البوتات بالطرد\n◉تم وضع الايدي بدون صوره\n◉تم قفل التكرار بالطرد\n◉تم قفل الروابط\n◉تم قفل التوجيه\n◉تم قفل الملصقات\n◉تم قفل المتحركه\n◉تم قفل الفيديو\n◉تم قفل السب\n◉تم قفل التعديل\n◉تم قفل الفارسيه\n◉تم قفل التفليش\n\nتم تفعيل الحمايه بواسطه ←['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'AP_XO ')..')')   
 end,nil) 
 end
 --------------------------------------------------------------------------------------------------------------
@@ -4416,6 +4417,7 @@ if tonumber(result.sender_user_id_) == tonumber(1986403229) then
 send(msg.chat_id_, msg.id_, "◉ لا تسطيع حظر مبرمج جميع السورسات عام")
 return false 
 end
+
 database:sadd(bot_id..'GBan:User', result.sender_user_id_)
 chat_kick(result.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},
@@ -6225,7 +6227,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم مسح المنظفين')
 end
 if text == ("المنظفين") and BasicConstructor(msg) then
 local list = database:smembers(bot_id..'S00F4:MN:TF'..msg.chat_id_)
-t = "\n ◉ قائمة المنظفين \n•═════•〈〈ＺＫＬＡＬ 〉〉•═════•\n"
+t = "\n ◉ قائمة المنظفين \n≪━━━━━━𝓓𝓡◉━━━━━━≫\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6241,7 +6243,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمنظفين") or text == ("صيح المنظفين") then
 local list = database:smembers(bot_id..'S00F4:MN:TF'..msg.chat_id_)
-t = "\n ◉ وينكم تعالو يريدوكم بالجروب \n•═════•〈〈ＺＫＬＡＬ 〉〉•═════•\n"
+t = "\n ◉ وينكم تعالو يريدوكم بالجروب \n≪━━━━━━𝓓◉𝓖━━━━━━≫\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9003,7 +9005,7 @@ send(msg.chat_id_, msg.id_,' ◉ البوت ليس ادمن يرجى ترقيت�
 return false  
 end
 database:sadd(bot_id..'Ban:User'..msg.chat_id_, result.id_)
-usertext = '\n ◉  المستخدم ← ['..result.title_..'](t.me/'..(username or 'AP_XO')..')'
+usertext = '\n ◉  المستخدم ← ['..result.title_..'](t.me/'..(username or 'GLOBLA')..')'
 status  = '\n ◉ تم حظره'
 texts = usertext..status
 chat_kick(msg.chat_id_, result.id_)
@@ -11269,8 +11271,8 @@ send(msg.chat_id_, msg.id_,' ◉ اشترك اولا بلقناه  ['..database:
 end
 return false
 end
-if num > 10000 then 
-send(msg.chat_id_, msg.id_,'◉تستطيع المسح 10000 رساله كحد اقصى') 
+if num > 2000 then 
+send(msg.chat_id_, msg.id_,'◉تستطيع المسح 2000 رساله كحد اقصى') 
 return false  
 end  
 local msgm = msg.id_
@@ -12042,15 +12044,15 @@ local curlm = 'curl "'..'https://api.telegram.org/bot'..token..'/sendDocument'..
 end   
 end
 if text == "غنيلي" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(2,200); 
+ght = math.random(3,200); 
 local Text ='تم اختيار المقطع الصوتي لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url="t.me/AP_XO "}},
+{{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋', url="t.me/AP_XO "}},
 {{text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/Ccckkcc/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/Ccckkc/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 end
 
@@ -12059,14 +12061,14 @@ ght = math.random(1,33);
 local Text ='الستخدم ثيم اخر اكتب ثيم'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
- {{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐙𝐊𝐋𝐀𝐋', url="t.me/AP_XO "}},
+ {{text = '𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐙𝐊𝐋𝐀𝐋', url="t.me/AP_XO "}},
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendDocument?chat_id=' .. msg.chat_id_ .. '&document=https://t.me/ahmedthem11/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendDocument?chat_id=' .. msg.chat_id_ .. '&document=https://t.me/ahmedthem1/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,55); 
+ght = math.random(2,22); 
 local Text ='تم اختيار فديو استوري  لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -12074,7 +12076,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت لمجموعتك 𖠕', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/koko123000/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/koko12300/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text and text:match("^وضع لقب (.*)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
@@ -12770,7 +12772,7 @@ end
 
 if text == 'انا مين' and Mod(msg) then 
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت مجرد ادمن اجتهد عشان تاخد رتبه😹 ](t.me/AP_XO)'
+local textt = '[انت مجرد ادمن اجتهد عشان ياخد رتبه😹 ](t.me/AP_XO)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14389,7 +14391,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'•═════•〈〈ＺＫＬＡＬ 〉〉•═════•\nاضغط علي الاسم ليتم نسخه\n•═════•〈〈ＺＫＬＡＬ 〉〉•═════•ٴ\n ◉ ❲[『..』](t.me/AP_XO )❳ ◉ ')
+send(msg.chat_id_, msg.id_, t..'•═════•〈〈ＺＫＬＡＬ 〉〉•═════•\nاضغط علي الاسم ليتم نسخه\n•═════•〈〈ＺＫＬＡＬ 〉〉•═════•ٴ\n ◉ ❲[『𝙰𝚕𝚏𝚊』](t.me/AP_XO )❳ ◉ ')
 end
 
 if text == "تعطيل معاني الاسماء" and Manager(msg) then
@@ -14806,7 +14808,7 @@ keyboard.inline_keyboard = {
 {text = 'قفل التكرار ◉', callback_data=data.sender_user_id_.."/lockflood"},{text = 'فتح التكرار ◉', callback_data=data.sender_user_id_.."/unlockflood"},
 },
 {
-{text = 'قفل زغللرسيه ◉', callback_data=data.sender_user_id_.."/lockfarse"},{text = 'فتح زغللرسيه ◉', callback_data=data.sender_user_id_.."/unlockfarse"},
+{text = 'قفل الفارسيه ◉', callback_data=data.sender_user_id_.."/lockfarse"},{text = 'فتح الفارسيه ◉', callback_data=data.sender_user_id_.."/unlockfarse"},
 },
 {
 {text = 'قفل السب ◉', callback_data=data.sender_user_id_.."/lockfshar"},{text = 'فتح السب ◉', callback_data=data.sender_user_id_.."/unlockfshar"},
